@@ -2,9 +2,10 @@ from g4f.client import Client
 import telebot
 import os
 
-TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-if not TOKEN:
-    raise ValueError("No TELEGRAM_BOT_TOKEN provided")
+# TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+# if not TOKEN:
+#     raise ValueError("No TELEGRAM_BOT_TOKEN provided")
+TOKEN="6976497175:AAH0udIVQYrNvI6e5eAP9lYpH0R2POxD4UE"
 bot = telebot.TeleBot(TOKEN)
 
 _PROMPT = f"""
