@@ -1,0 +1,35 @@
+.wrapper {
+  border-radius: var(--border-radius-2);
+  background-color: #808AFF;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  & .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  & .title {
+    font-size: 35px;
+  }
+
+  & .description {
+    font-size: 25px;
+  }
+  & .round {
+    background-color: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 100px;
+
+    & .index {
+      font-size: 50px;
+
+    }
+  }
+}

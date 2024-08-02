@@ -37,6 +37,7 @@ export const Paragraph = (
 
                 // ВЕС
                 [cls.fontBlack]: weight === WeightEnum.BLACK,
+                [cls.fontExtraBold]: weight === WeightEnum.EXTRABOLD,
                 [cls.fontBold]: weight === WeightEnum.BOLD,
                 [cls.fontMedium]: weight === WeightEnum.MEDIUM,
                 [cls.fontNormal]: weight === WeightEnum.NORMAL,

@@ -5,11 +5,11 @@
     color: var(--primary);
 
     &:hover {
-      color: var(--primary-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--primary-active);
+      filter: brightness(75%);
     }
   }
 
@@ -17,11 +17,11 @@
     color: var(--secondary);
 
     &:hover {
-      color: var(--secondary-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--secondary-active);
+      filter: brightness(75%);
     }
   }
 
@@ -30,11 +30,11 @@
     color: var(--text);
 
     &:hover {
-      filter: brightness(90%);
+      filter: brightness(75%);
     }
 
     &:active {
-      filter: brightness(90%);
+      filter: brightness(75%);
     }
   }
 
@@ -42,11 +42,11 @@
     color: var(--success);
 
     &:hover {
-      color: var(--success-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--success-active);
+      filter: brightness(75%);
     }
   }
 
@@ -54,11 +54,11 @@
     color: var(--warning);
 
     &:hover {
-      color: var(--warning-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--warning-active);
+      filter: brightness(75%);
     }
   }
 
@@ -66,11 +66,11 @@
     color: var(--danger);
 
     &:hover {
-      color: var(--danger-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--danger-active);
+      filter: brightness(75%);
     }
   }
 
@@ -78,11 +78,11 @@
     color: var(--info);
 
     &:hover {
-      color: var(--info-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--info-active);
+      filter: brightness(75%);
     }
   }
 
@@ -90,11 +90,11 @@
     color: var(--link);
 
     &:hover {
-      color: var(--link-hover);
+      filter: brightness(75%);
     }
 
     &:active {
-      color: var(--link-active);
+      filter: brightness(75%);
     }
   }
 
@@ -132,6 +132,10 @@
 
   &.fontBlack {
     font-weight: var(--fontBlack);
+  }
+
+  &.fontExtraBold {
+    font-weight: var(--fontExtraBold);
   }
 
   &.fontBold {
