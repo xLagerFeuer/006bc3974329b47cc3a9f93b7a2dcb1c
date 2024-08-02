@@ -1,0 +1,48 @@
+.link {
+  background-color: var(--bg);
+  transition: 0.3s all ease;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-6);
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-dark);
+  }
+
+  span {
+    position: absolute;
+    left: -20px;
+    border-top-right-radius: var(--border-radius-6);
+    border-bottom-right-radius: var(--border-radius-6);
+    width: 7px;
+    height: 50px;
+    background-color: var(--primary);
+  }
+
+  &:active {
+    background-color: var(--bg-dark);
+    filter: brightness(120%);
+  }
+
+  & svg {
+    fill: var(--text);
+    width: 20px;
+    height: 20px;
+  }
+
+  &.active {
+
+    & svg {
+      fill: var(--primary);
+    }
+
+    & a {
+      font-weight: 900;
+      color: var(--primary);
+    }
+  }
+}

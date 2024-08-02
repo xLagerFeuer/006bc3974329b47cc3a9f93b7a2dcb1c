@@ -7,19 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-
-
-# FRONT
-
-/front/node_modules/
-/front/dist/
-/front/.env
-
-/admin/node_modules/
-/admin/dist/
-/admin/.env
-
-
 node_modules
 dist
 dist-ssr

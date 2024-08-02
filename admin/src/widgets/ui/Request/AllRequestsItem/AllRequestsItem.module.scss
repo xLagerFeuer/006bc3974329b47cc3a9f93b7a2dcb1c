@@ -1,0 +1,45 @@
+.item {
+  display: flex;
+  background-color: var(--bg);
+  transition: 0.3s all ease;
+  cursor: pointer;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius-6);
+
+
+  &:hover {
+    background-color: var(--bg-dark);
+  }
+
+  &:active {
+    background-color: var(--bg-dark);
+  }
+
+
+  & .opacity {
+    opacity: 0.5;
+  }
+
+
+  & .title {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+    & .img {
+      width: 75px;
+      object-fit: cover;
+      height: 75px;
+      border-radius: 50%;
+    }
+  }
+
+
+  & .tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

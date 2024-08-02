@@ -1,0 +1,50 @@
+.modal {
+  flex: 0 0 20%;
+  padding: 20px 0;
+  position: relative;
+
+  & .label {
+    opacity: 0.3;
+  }
+
+  & .close {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    cursor: pointer;
+    & svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--text);
+    }
+  }
+
+  & .workerImg {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  &Content {
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: var(--border-radius-4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  & .list {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &.hide {
+    display: none;
+  }
+}

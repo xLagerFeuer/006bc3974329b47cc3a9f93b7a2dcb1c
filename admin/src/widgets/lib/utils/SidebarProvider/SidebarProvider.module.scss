@@ -1,0 +1,20 @@
+.wrapper {
+  background-color: var(--bg);
+  display: flex;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.body {
+  min-height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: var(--bg-dark);
+  flex-grow: 1;
+  transition: 0.3s all ease;
+  padding-left: 100px;
+
+  &.hide {
+    padding-left: 325px;
+  }
+}

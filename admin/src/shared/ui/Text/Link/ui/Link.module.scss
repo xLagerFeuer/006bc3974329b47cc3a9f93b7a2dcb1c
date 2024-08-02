@@ -1,0 +1,172 @@
+.link {
+  transition: .3s all ease;
+
+  &.primary {
+    color: var(--primary);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.secondary {
+    color: var(--secondary);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+
+  &.text {
+    color: var(--text) !important;
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.success {
+    color: var(--success);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.warning {
+    color: var(--warning);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.danger {
+    color: var(--danger);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.info {
+    color: var(--info);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.link {
+    color: var(--link);
+
+    &:hover {
+      filter: brightness(75%);
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  &.white {
+    color: var(--white);
+  }
+
+  &.black {
+    color: var(--black);
+  }
+
+  &.h1 {
+    font: var(--paragraph-1);
+  }
+
+  &.h2 {
+    font: var(--paragraph-2);
+  }
+
+  &.h3 {
+    font: var(--paragraph-3);
+  }
+
+  &.h4 {
+    font: var(--paragraph-4);
+  }
+
+  &.h5 {
+    font: var(--paragraph-5);
+  }
+
+  &.h6 {
+    font: var(--paragraph-6);
+  }
+
+  &.fontBlack {
+    font-weight: var(--fontBlack);
+  }
+
+  &.fontExtraBold {
+    font-weight: var(--fontExtraBold);
+  }
+
+  &.fontBold {
+    font-weight: var(--fontBold);
+  }
+
+  &.fontMedium {
+    font-weight: var(--fontMedium);
+  }
+
+  &.fontNormal {
+    font-weight: var(--fontNormal);
+  }
+
+  &.fontLight {
+    font-weight: var(--fontLight);
+  }
+
+  &.fontThin {
+    font-weight: var(--fontThin);
+  }
+
+  &.fontFirst {
+    font-family: var(--fontFamilyFirst), sans-serif;
+  }
+
+  &.fontSecond {
+    font-family: var(--fontFamilySecond) sans-serif;
+  }
+
+  &.fontThird {
+    font-family: var(--fontFamilyThird) sans-serif;
+  }
+}

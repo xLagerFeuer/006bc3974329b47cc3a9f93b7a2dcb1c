@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-Bold.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-Bold.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-ExtraBold.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-ExtraBold.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-ExtraLight.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-ExtraLight.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-Light.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-Light.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-Medium.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-Medium.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Jemima';
+  src: url("@shared/assets/fonts/Jemima/ttf/Jemima-Regular.ttf") format("ttf"),
+  url("@shared/assets/fonts/Jemima/woff/Jemima-Regular.woff") format("woff"),
+  url("@shared/assets/fonts/Jemima/woff2/Jemima-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Kontanter';
+  src: url("@shared/assets/fonts/Kontanter/ttf/kontanter-bold.ttf") format("ttf"),
+  url("@shared/assets/fonts/Kontanter/woff/kontanter-bold.woff") format("woff"),
+  url("@shared/assets/fonts/Kontanter/woff2/kontanter-bold.woff2") format("woff2");
+  font-weight: bold;
+}
