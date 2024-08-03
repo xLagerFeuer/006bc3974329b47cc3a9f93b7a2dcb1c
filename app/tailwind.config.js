@@ -5,7 +5,11 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx,css}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   variants: {
-    extend: {},
+    extend: {
+      colors: {
+        'bg': "#F3F5F4"
+      }
+    },
   },
   plugins: [],
 }

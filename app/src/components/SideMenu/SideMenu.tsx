@@ -49,7 +49,7 @@ const SideMenu: React.FC = () => {
                             className="text-xl bg-white w-12 h-10 flex items-center justify-center rounded-full mr-4"
                             onClick={() => document.querySelector('ion-menu')?.open()}
                         >
-                            ☰
+                            <img src="/menu.svg" alt="" />
                         </button>
                         <div className="relative w-full">
                             <input

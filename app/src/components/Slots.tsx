@@ -22,17 +22,18 @@ const Slots: React.FC = () => {
         <>
             <div>
                 <header className="bg-gray-100 flex items-center justify-between px-4">
-                    <div className="flex items-center w-full space-x-4 overflow-x-auto bg-transparent font-bold text-indigo-400">
+                    <div
+                        className="flex items-center w-full space-x-1 overflow-x-auto bg-transparent font-bold text-indigo-400">
                         {days.map((date, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col items-center p-2 rounded-full ${
+                                className={`flex text-sm flex-col items-center p-1.5 rounded-full ${
                                     isToday(date) ? 'bg-white' : ''
                                 }`}
                             >
                                 <p>{date.format('dd').toUpperCase()}</p>
                                 <p
-                                    className={`rounded-full py-1.5 px-2 ${
+                                    className={`rounded-full px-4  py-2 ${
                                         isToday(date)
                                             ? 'bg-indigo-400 text-white'
                                             : ''

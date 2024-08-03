@@ -1,34 +1,84 @@
-import { IonContent, IonPage } from '@ionic/react';
+import { IonContent, IonNavLink, IonPage } from '@ionic/react';
 import React from 'react';
-import './Home.css';
 import './../theme/tailwind.css';
+import { Finances } from '../components/Finances';
+import Home from './Home';
 
 const UserProfilePage: React.FC = () => {
 
     return (
         <IonPage>
-            <IonContent className="flex items-center justify-center h-full bg-gray-300">
-                <header className="w-full items-end justify-content-center justify-center bg-gray-300">
-                    <div className="flex items-center w-full bg-transparent mt-8 mb-8">
+            <IonContent className="h-full">
+                <header className="flex  mx-2 items-start justify-between bg-bg">
+                    <IonNavLink routerDirection="forward" component={() => <Home />}>
                         <button
-                            className="text-xl bg-white w-12 h-10 flex items-center justify-center rounded-full mr-4"
+                            className="text-xl mt-8 bg-white w-12 h-12 flex items-center justify-center rounded-full "
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
-                                <path fillRule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
-                            </svg>
+
+                            <img src="/right.svg" alt="" />
                         </button>
-                        <div className="relative w-full">
-                            <input
-                                type="text"
-                                placeholder="Введите ваш запрос..."
-                                className="rounded-full px-4 py-2 border border-gray-300 w-full"
-                            />
-                            <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500">
-                                🔍
-                            </button>
+                    </IonNavLink>
+                    <div className="flex flex-col gap-4 items-center mt-8">
+                        <img className="w-28" src="/user.png" alt="" />
+                        <div className="flex flex-col gap-1">
+                              <span className="text-md font-normal text-black text-center">
+                            Александр Иванов
+                        </span>
+                            <span className="text-xs font-normal text-black opacity-50 text-center">
+                            самозанятый
+                        </span>
                         </div>
                     </div>
+                    <button
+                        className="text-xl mt-8  bg-white w-12 h-12 flex items-center justify-center rounded-full mr-4"
+                    >
+                        <img src="/settings.svg" alt="" />
+                    </button>
                 </header>
+                <div className="flex justify-center gap-2 m-4">
+                    <div
+                        className="flex cursor-pointer w-2/5 flex-col p-3 rounded-3xl items-center justify-center bg-[#DCF831C4] bg-gradient-to-t">
+                            <span className="text-black text-xs">
+                                Ваша надежность
+                            </span>
+                        <span className="text-black text-xs">
+                                100
+                            </span>
+                    </div>
+                    <div
+                        className="flex cursor-pointer w-2/5 flex-col p-3 rounded-3xl items-center justify-center bg-indigo-500 bg-gradient-to-t">
+                        <span className="text-white text-xs">
+                                Отзывы
+                            </span>
+                    </div>
+                </div>
+                <div className="flex items-center mx-2 gap-4 justify-center">
+                    <div className="relative">
+                        <img className="w-full" src="/profile1.png" alt="" />
+                        <div className="absolute bottom-2 right-2 rounded-md bg-[#DCF831C4]">
+                            <span className="text-indigo-500 text-[10px] leading-3">
+                                Станьте наставником
+                            </span>
+                        </div>
+                    </div>
+                    <div className="relative">
+                        <img src="/profile2.png" alt="" />
+                        <div className="absolute bottom-2 right-2 rounded-md bg-[#DCF831C4]">
+                            <span className="text-indigo-500 text-[10px] leading-3">
+                                Новое обучение
+                            </span>
+                        </div>
+                    </div>
+                    <div className="relative">
+                        <img src="/profile3.png" alt="" />
+                        <div className="absolute bottom-2 right-2 rounded-md bg-[#DCF831C4]">
+                            <span className="text-indigo-500 text-[10px] leading-3">
+                                Советы опытных разнорабочих
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <Finances />
             </IonContent>
         </IonPage>
     );

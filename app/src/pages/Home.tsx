@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       <IonPage>
           {isLoading && <SplashScreen isVisible={isSplashVisible} />}
           {!isLoading && (
-              <IonContent className="flex items-center justify-center h-full bg-gray-300">
+              <IonContent className="flex items-center justify-center bg-gray-300">
                   <SideMenu/>
                   <Slots/>
                   <TabComponent />
