@@ -11,11 +11,12 @@ import {
 } from '@pages/ui';
 import { SidebarProvider } from '@widgets/lib/utils/SidebarProvider';
 import 'react-calendar/dist/Calendar.css';
+import { AuthProvider } from '@app/providers/AuthProvider.tsx';
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        // element: <AuthProvider />,
+        element: <AuthProvider />,
         children: [
             {
                 index: true,

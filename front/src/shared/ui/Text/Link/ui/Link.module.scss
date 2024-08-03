@@ -86,17 +86,6 @@
     }
   }
 
-  &.link {
-    color: var(--link);
-
-    &:hover {
-      filter: brightness(75%);
-    }
-
-    &:active {
-      filter: brightness(75%);
-    }
-  }
 
   &.white {
     color: var(--white);

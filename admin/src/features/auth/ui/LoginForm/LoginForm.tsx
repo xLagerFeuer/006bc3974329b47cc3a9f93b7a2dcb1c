@@ -134,6 +134,7 @@ export const LoginForm = () => {
             >
                 Нет аккаунта?&nbsp;
                 <Text.Link
+                    color={ColorEnum.PRIMARY}
                     size={SizeEnum.H3}
                     to="/auth/register">Создать</Text.Link>
             </Text.Paragraph>

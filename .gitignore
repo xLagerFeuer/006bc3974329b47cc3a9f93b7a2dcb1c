@@ -19,6 +19,11 @@ lerna-debug.log*
 /admin/dist/
 /admin/.env
 
+/nest/node_modules/
+/nest/dist/
+/nest/.env
+
+
 
 node_modules
 dist

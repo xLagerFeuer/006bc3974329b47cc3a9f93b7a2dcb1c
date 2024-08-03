@@ -1,5 +1,6 @@
-.link {
+.a {
   transition: .3s all ease;
+
   &.primary {
     color: var(--primary);
 
@@ -26,7 +27,7 @@
 
 
   &.text {
-    color: var(--text) !important;
+    color: var(--text);
 
     &:hover {
       filter: brightness(75%);

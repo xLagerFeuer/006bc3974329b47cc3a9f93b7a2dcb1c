@@ -16,7 +16,7 @@ export const Link = (
     return (
         <RouterLink
             {...props}
-            className={classNames(cls.link, {
+            className={classNames(cls.a, {
                 // ЦВЕТА
                 [cls.primary]: color === ColorEnum.PRIMARY,
                 [cls.secondary]: color === ColorEnum.SECONDARY,

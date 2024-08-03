@@ -7,18 +7,23 @@
   padding: 40px;
   background-color: var(--bg);
   border-radius: var(--border-radius-1);
+
+}
+
+.link {
+  color: var(--primary) !important;
 }
 
 .wrapper {
   margin-bottom: 20px;
   position: relative;
 
-
   & .error {
     position: absolute;
     bottom: -24px;
     left: 10px;
   }
+
   & .errorInput {
     border: 1px solid var(--danger);
   }

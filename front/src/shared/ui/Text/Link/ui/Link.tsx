@@ -6,7 +6,7 @@ import { ILinkProps } from '@shared/ui';
 
 export const Link = (
     {
-        color = ColorEnum.LINK,
+        color = ColorEnum.TEXT,
         size = SizeEnum.H1,
         weight = WeightEnum.NORMAL,
         className,

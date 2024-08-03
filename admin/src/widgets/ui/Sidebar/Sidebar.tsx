@@ -4,9 +4,11 @@ import Tab from '@assets/icons/tab.svg';
 import { NavigationList } from '@features/navigation';
 import { classNames, ColorEnum, SizeEnum, useAppDispatch, useAppSelector, WeightEnum } from '@shared/lib';
 import { selectSidebar, toggleSidebar } from '@features/events';
+import { selectUser } from '@entities/user';
 
 export const Sidebar = () => {
     const dispatch = useAppDispatch();
+    const user = useAppSelector(selectUser);
     const isOpen = useAppSelector(selectSidebar);
     return (
         <div className={classNames(cls.wrapper, {
@@ -24,7 +26,7 @@ export const Sidebar = () => {
                         color={ColorEnum.TEXT}
                         weight={WeightEnum.NORMAL}
                     >
-                        abobus
+                        {user.firstName ? user.firstName : "Имя не введено"}
                     </Text.Paragraph>
                     <Text.Paragraph
                         size={SizeEnum.H3}

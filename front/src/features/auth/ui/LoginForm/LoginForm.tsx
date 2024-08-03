@@ -130,10 +130,13 @@ export const LoginForm = () => {
                 Отправить
             </Button>
             <Text.Paragraph
+                color={ColorEnum.TEXT}
                 size={SizeEnum.H3}
             >
                 Нет аккаунта?&nbsp;
                 <Text.Link
+                    className={cls.link}
+                    color={ColorEnum.PRIMARY}
                     size={SizeEnum.H3}
                     to="/auth/register">Создать</Text.Link>
             </Text.Paragraph>
