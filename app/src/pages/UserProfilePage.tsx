@@ -1,23 +1,22 @@
-import { IonContent, IonNavLink, IonPage } from '@ionic/react';
+import { IonBackButton, IonContent, IonPage } from '@ionic/react';
 import React from 'react';
 import './../theme/tailwind.css';
 import { Finances } from '../components/Finances';
-import Home from './Home';
 
 const UserProfilePage: React.FC = () => {
-
     return (
         <IonPage>
             <IonContent className="h-full">
                 <header className="flex  mx-2 items-start justify-between bg-bg">
-                    <IonNavLink routerDirection="forward" component={() => <Home />}>
-                        <button
-                            className="text-xl mt-8 bg-white w-12 h-12 flex items-center justify-center rounded-full "
+                    <button
+                        className="text-xl mt-8 bg-white w-12 h-12 flex items-center justify-center rounded-full "
+                    >
+                        <IonBackButton
+                            className="text-black"
+                            defaultHref="/home"
                         >
-
-                            <img src="/right.svg" alt="" />
-                        </button>
-                    </IonNavLink>
+                        </IonBackButton>
+                    </button>
                     <div className="flex flex-col gap-4 items-center mt-8">
                         <img className="w-28" src="/user.png" alt="" />
                         <div className="flex flex-col gap-1">
