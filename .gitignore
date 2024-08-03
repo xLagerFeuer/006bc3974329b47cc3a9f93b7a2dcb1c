@@ -7,6 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+/app/dist
+/app/node_modules
+/**/node_modules
+/**/dist
+/**/build
+
 
 
 # FRONT
@@ -22,6 +28,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
+.vscode
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -33,6 +40,7 @@ dist-ssr
 *.sw?
 
 # ML
-
 employer-loyality/data/*
 employer-loyality/models/*
+price-predict/input/*
+!.gitkeep
