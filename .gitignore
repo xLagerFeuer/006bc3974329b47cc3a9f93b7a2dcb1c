@@ -39,7 +39,8 @@ dist-ssr
 *.sln
 *.sw?
 
-
 # ML
+employer-loyality/data/*
+employer-loyality/models/*
 price-predict/input/*
 !.gitkeep

@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 50px 0;
+  background-color: var(--white);
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  & .title {
+    font-size: 75px;
+  }
+
+  & .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}

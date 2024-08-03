@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+
+  & .list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+
+    &Item a {
+      font-weight: 800;
+    }
+  }
+
+  & .button {
+    display: flex;
+    gap: 20px;
+  }
+}

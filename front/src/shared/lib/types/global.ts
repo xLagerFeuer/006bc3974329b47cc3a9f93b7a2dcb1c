@@ -8,7 +8,10 @@ export enum ColorEnum {
     LINK = 'link',
     WHITE = 'white',
     BLACK = 'black',
-    TEXT = 'text'
+    TEXT = 'text',
+    BG = 'bg',
+    BGDARK = 'bgDark'
+
 }
 
 export enum SizeEnum {
@@ -22,6 +25,7 @@ export enum SizeEnum {
 
 export enum WeightEnum {
     BLACK = '900',
+    EXTRABOLD = '800',
     BOLD = '700',
     MEDIUM = '500',
     NORMAL = '400',

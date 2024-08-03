@@ -163,6 +163,14 @@
     background-color: var(--black);
     border: 1px solid var(--black);
   }
+  &.bg {
+    background-color: var(--bg);
+    border: 1px solid var(--bg);
+  }
+  &.bgDark {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--bg-dark);
+  }
 
 
   &.h1 {

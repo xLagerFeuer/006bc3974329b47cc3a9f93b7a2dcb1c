@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 50px 0;
+  background-color: var(--bg-dark);
+
+  & .container {
+    background-image: url("/benefits/5.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  & .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  & .title {
+    font-size: 70px;
+    text-align: center;
+
+  }
+}
