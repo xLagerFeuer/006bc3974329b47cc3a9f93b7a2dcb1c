@@ -8,6 +8,12 @@ snscrape = "*"
 g4f = "*"
 pandas = "*"
 scikit-learn = "*"
+ipykernel = "*"
+torch = "*"
+numpy = "*"
+matplotlib = "*"
+optuna = "*"
+langchain = "*"
 
 [dev-packages]
 
