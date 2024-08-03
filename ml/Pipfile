@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+snscrape = "*"
+g4f = "*"
 pandas = "*"
 scikit-learn = "*"
 
