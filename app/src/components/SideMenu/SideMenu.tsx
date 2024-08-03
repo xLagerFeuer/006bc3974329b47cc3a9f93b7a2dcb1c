@@ -18,7 +18,7 @@ const SideMenu: React.FC = () => {
                     <Link to="/home" className="text-2xl text-white mb-4 ml-4 mt-8 no-underline font-bold">
                         Главная страница
                     </Link>
-                    <Link to="/page2" className="text-2xl text-white mb-4 ml-4 no-underline font-bold">
+                    <Link to="/profile" className="text-2xl text-white mb-4 ml-4 no-underline font-bold">
                         Мой профиль
                     </Link>
                     <Link to="/page3" className="text-2xl text-white mb-4 ml-4 no-underline font-bold">
