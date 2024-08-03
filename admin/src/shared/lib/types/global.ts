@@ -8,7 +8,9 @@ export enum ColorEnum {
     LINK = 'link',
     WHITE = 'white',
     BLACK = 'black',
-    TEXT = 'text'
+    TEXT = 'text',
+    BG = 'bg',
+    BGDARK = 'bgDark'
 }
 
 export enum SizeEnum {

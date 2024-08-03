@@ -1,8 +1,8 @@
 import cls from './Sidebar.module.scss';
-import { ThemeSwitcher } from '@shared/ui';
+import { Text, ThemeSwitcher } from '@shared/ui';
 import Tab from '@assets/icons/tab.svg';
 import { NavigationList } from '@features/navigation';
-import { classNames, useAppDispatch, useAppSelector } from '@shared/lib';
+import { classNames, ColorEnum, SizeEnum, useAppDispatch, useAppSelector, WeightEnum } from '@shared/lib';
 import { selectSidebar, toggleSidebar } from '@features/events';
 
 export const Sidebar = () => {
@@ -12,6 +12,30 @@ export const Sidebar = () => {
         <div className={classNames(cls.wrapper, {
             [cls.hide]: !isOpen,
         }, [])}>
+            <div className={classNames(cls.user, {
+                [cls.hide]: !isOpen,
+            }, [])}>
+                <div className={cls.img}></div>
+                <Text.Link
+                    to="/me"
+                    className={cls.info}>
+                    <Text.Paragraph
+                        size={SizeEnum.H3}
+                        color={ColorEnum.TEXT}
+                        weight={WeightEnum.NORMAL}
+                    >
+                        abobus
+                    </Text.Paragraph>
+                    <Text.Paragraph
+                        size={SizeEnum.H3}
+                        color={ColorEnum.TEXT}
+                        className={cls.opacity}
+                        weight={WeightEnum.BOLD}
+                    >
+                        abobus@gmail.com
+                    </Text.Paragraph>
+                </Text.Link>
+            </div>
             <NavigationList />
             <div className={classNames(cls.buttons, {
                 [cls.hide]: !isOpen,

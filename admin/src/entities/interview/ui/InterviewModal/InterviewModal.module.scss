@@ -1,0 +1,68 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.body {
+  padding: 30px;
+  z-index: 1000;
+  border-radius: var(--border-radius-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 30%;
+  height: 75%;
+  background: var(--bg);
+  position: relative;
+
+  & .someInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & .calendar {
+    width: 100%;
+
+    & button {
+      border-radius: var(--border-radius-6) !important;
+    }
+  }
+
+  & .close svg {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    fill: var(--text);
+    transition: 0.3s all ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

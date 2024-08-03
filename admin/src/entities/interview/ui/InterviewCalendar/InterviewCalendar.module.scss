@@ -1,0 +1,27 @@
+.wrapper {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: var(--border-radius-4);
+  padding: 30px;
+  flex: 1 1 auto;
+
+  & .calendar {
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    border: none;
+    background-color: var(--bg) !important;
+    & button {
+      &:hover {
+        background-color: var(--bg-dark);
+      }
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 40px 20px;
+      border-radius: var(--border-radius-6);
+    }
+  }
+}
+

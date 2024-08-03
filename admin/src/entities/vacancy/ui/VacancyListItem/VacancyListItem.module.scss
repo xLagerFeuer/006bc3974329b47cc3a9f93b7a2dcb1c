@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  border-radius: var(--border-radius-6);
+  background-color: var(--bg);
+  & .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  & .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  & .title {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    & .count {
+      line-height: 1;
+      padding: 10px 20px;
+      display: block;
+      border-radius: var(--border-radius-1);
+      background-color: var(--secondary);
+    }
+  }
+
+  & .additional {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    & p:not(:last-child) {
+      position: relative;
+
+      &:after {
+        content: '';
+        border-radius: 50%;
+        display: block;
+        width: 3px;
+        height: 3px;
+        background-color: var(--text);
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        right: -20px;
+      }
+    }
+  }
+}

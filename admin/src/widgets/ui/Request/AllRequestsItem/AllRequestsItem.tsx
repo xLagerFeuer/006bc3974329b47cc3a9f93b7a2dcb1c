@@ -58,6 +58,15 @@ export const AllRequestsItem = (
                     onClick={selectWorker}
                     className={cls.email}
                     size={SizeEnum.H2}
+                    color={ColorEnum.SUCCESS}
+                    weight={WeightEnum.BOLD}
+                >
+                    Назначить интервью
+                </Text.Paragraph>
+                <Text.Paragraph
+                    onClick={selectWorker}
+                    className={cls.email}
+                    size={SizeEnum.H2}
                     color={ColorEnum.PRIMARY}
                     weight={WeightEnum.BOLD}
                 >

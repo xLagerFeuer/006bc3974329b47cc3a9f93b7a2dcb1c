@@ -10,7 +10,7 @@ export const NavigationList = () => {
             [cls.hide]: !isOpen,
         }, [])}>
             {NavigationConfig.map((item) => (
-                <NavigationItem key={item.path} {...item} />
+                <NavigationItem key={item.label} {...item} />
             ))}
         </ul>
     );

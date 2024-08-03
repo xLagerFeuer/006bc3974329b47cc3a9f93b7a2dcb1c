@@ -1,7 +1,16 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
-import { LoginPage, MainPage, RegisterPage } from '@pages/ui';
-import { AuthProvider } from '@app/providers/AuthProvider.tsx';
+import {
+    CandidatePage,
+    InterviewPage,
+    LoginPage,
+    MainPage,
+    MyPage,
+    RegisterPage,
+    VacancyPage,
+    WorkTimePage,
+} from '@pages/ui';
 import { SidebarProvider } from '@widgets/lib/utils/SidebarProvider';
+import 'react-calendar/dist/Calendar.css';
 
 export const router = createBrowserRouter([
     {
@@ -11,6 +20,28 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <SidebarProvider><MainPage /></SidebarProvider>,
+            },
+            {
+                path: 'vacancy',
+                element: <SidebarProvider><VacancyPage /></SidebarProvider>,
+            },
+            {
+                path: 'candidate',
+                element: <SidebarProvider><CandidatePage /></SidebarProvider>,
+            },
+
+            {
+                path: 'interview',
+                element: <SidebarProvider><InterviewPage /></SidebarProvider>,
+            },
+
+            {
+                path: 'workTime',
+                element: <SidebarProvider><WorkTimePage /></SidebarProvider>,
+            },
+            {
+                path: 'me',
+                element: <SidebarProvider><MyPage /></SidebarProvider>,
             },
         ],
     },

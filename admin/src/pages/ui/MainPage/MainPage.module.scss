@@ -1,5 +1,11 @@
 .wrapper {
   background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & .button {
+    margin-left: auto;
+  }
   & .content {
     display: flex;
     gap: 20px;
@@ -9,8 +15,8 @@
     }
 
     & .body {
-      margin: 20px 0 20px;
       display: grid;
+      margin-bottom: 20px;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
     }

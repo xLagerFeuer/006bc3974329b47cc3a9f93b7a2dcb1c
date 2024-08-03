@@ -15,15 +15,15 @@ export const NavigationItem = (
         <li className={classNames(cls.link, {
             [cls.active]: path === pathname,
         }, [])}>
-            <Icon />
-            {path === pathname && <span></span>
-            }
             <Text.Link
                 size={SizeEnum.H2}
                 fontFamily={FontFamilyEnum.FIRST}
-                color={ColorEnum.TEXT}
+                color={path === pathname ? ColorEnum.PRIMARY : ColorEnum.TEXT}
                 to={path}
             >
+                <Icon />
+                {path === pathname && <span></span>
+                }
                 {label}
             </Text.Link>
         </li>

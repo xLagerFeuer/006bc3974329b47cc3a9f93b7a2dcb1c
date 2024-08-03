@@ -1,0 +1,111 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.body {
+  padding: 60px;
+  z-index: 1000;
+  border-radius: var(--border-radius-5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 95%;
+  height: 95%;
+  background: var(--bg);
+  position: relative;
+
+  & .select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+  }
+  & .close svg {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.7;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    fill: var(--text);
+    transition: 0.3s all ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+
+
+}
+
+.avatarEdit {
+  transition: 0.3s all ease;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 70%;
+
+  & .someInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.button {
+  &Reset {
+    background-color: var(--error);
+    filter: brightness(60%);
+  }
+}
+
+.inputWrapper {
+  position: relative;
+
+  .error {
+    position: absolute;
+    bottom: -25px;
+    color: var(--danger) !important;
+    left: 10px;
+  }
+
+  .errorInput {
+    border: 1px solid var(--danger);
+  }
+}

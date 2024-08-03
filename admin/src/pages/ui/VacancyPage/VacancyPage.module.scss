@@ -1,0 +1,55 @@
+.wrapper {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .pagination {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &Icon {
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+
+      &:disabled {
+        filter: brightness(100%);
+      }
+    }
+
+    &Item button {
+      max-width: 40px;
+      max-height: 40px;
+      padding: 15px;
+
+      & p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+
+    &Icon {
+      &.active {
+        & svg {
+          fill: var(--text);
+        }
+      }
+
+      & svg {
+        fill: var(--white);
+        width: 20px;
+        transform: scale(200%);
+        height: 20px;
+      }
+    }
+  }
+}

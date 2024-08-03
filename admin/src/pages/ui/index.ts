@@ -2,3 +2,8 @@ export * from './MainPage';
 export * from './LoginPage';
 export * from './RegisterPage';
 export * from './RequireAuth';
+export * from './VacancyPage';
+export * from './MyPage';
+export * from './CandidatePage';
+export * from './InterviewPage';
+export * from './WorkTimePage';
