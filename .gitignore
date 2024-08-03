@@ -7,6 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+/app/dist
+/app/node_modules
+/**/node_modules
+/**/dist
+/**/build
+
 
 
 # FRONT
@@ -32,3 +38,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# ML
+price-predict/input/*
+!.gitkeep
