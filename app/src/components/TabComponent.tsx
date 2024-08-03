@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TaskNearbyComponent from './TaskNearbyComponent';
 import CardComponent from './CardComponent';
+import {Link} from "react-router-dom";
 
 /* eslint-disable no-undef */
 interface TabProps {
@@ -49,7 +50,6 @@ const TabComponent: React.FC = () => {
             reward: '2800 Р',
             endDate: new Date(Date.now() + 200000 * 1000).toISOString(), // ISO строка конечной даты
         },
-        // Добавьте другие карточки по аналогии
     ];
 
     return (
@@ -82,6 +82,11 @@ const TabComponent: React.FC = () => {
                         ))}
                     </ul>
                 )}
+            </div>
+            <div className={'mx-auto mt-4'}>
+                <Link to="/map" className="flex-1 text-sm py-2 px-4 bg-indigo-500 text-white rounded-full">
+                    На карте
+                </Link>
             </div>
         </div>
     );
