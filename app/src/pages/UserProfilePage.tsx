@@ -1,4 +1,4 @@
-import { IonBackButton, IonContent, IonPage } from '@ionic/react';
+import { IonBackButton, IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import React from 'react';
 import './../theme/tailwind.css';
 import { Finances } from '../components/Finances';
@@ -7,7 +7,7 @@ const UserProfilePage: React.FC = () => {
     return (
         <IonPage>
             <IonContent className="h-full">
-                <header className="flex  mx-2 items-start justify-between bg-bg">
+                <header className="flex mx-2 items-start justify-between">
                     <button
                         className="text-xl mt-8 bg-white w-12 h-12 flex items-center justify-center rounded-full "
                     >
@@ -28,11 +28,14 @@ const UserProfilePage: React.FC = () => {
                         </span>
                         </div>
                     </div>
-                    <button
-                        className="text-xl mt-8  bg-white w-12 h-12 flex items-center justify-center rounded-full mr-4"
-                    >
-                        <img src="/settings.svg" alt="" />
-                    </button>
+                    <IonRouterLink href="profile/edit">
+                        <button
+                            className="text-xl mt-8  bg-white w-12 h-12 flex items-center justify-center rounded-full mr-4"
+                        >
+                            <img src="/settings.svg" alt="" />
+                        </button>
+                    </IonRouterLink>
+
                 </header>
                 <div className="flex justify-center gap-2 m-4">
                     <div
@@ -80,7 +83,8 @@ const UserProfilePage: React.FC = () => {
                 <Finances />
             </IonContent>
         </IonPage>
-    );
+    )
+        ;
 };
 
 export default UserProfilePage;
