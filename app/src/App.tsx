@@ -39,6 +39,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 import UserProfilePage from "./pages/UserProfilePage";
+import MapPage from "./pages/MapPage";
 
 setupIonicReact();
 
@@ -54,6 +55,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/profile">
           <UserProfilePage/>
+        </Route>
+        <Route exact path="/map">
+          <MapPage/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
