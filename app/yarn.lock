@@ -2170,6 +2170,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@oviorweb/tailwind-colors@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@oviorweb/tailwind-colors/-/tailwind-colors-3.0.0.tgz#ca3e50d528c69fade827930b609c55c90bc8cc25"
+  integrity sha512-WZQuJUVq0y7YQOqbkzKUbTHjq1zcNkKDD8iB9d5Ue6anDErW29JfgJJ6bg4LzbKfCdtcWxa+RCxsW9UQgVWq1A==
+
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
@@ -4822,7 +4827,7 @@ data-view-byte-offset@^1.0.0:
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
 
-dayjs@^1.10.4:
+dayjs@^1.10.4, dayjs@^1.11.12:
   version "1.11.12"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.12.tgz#5245226cc7f40a15bf52e0b99fd2a04669ccac1d"
   integrity sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==
