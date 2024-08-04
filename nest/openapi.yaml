@@ -1,16 +1,3 @@
-## Installation:
-
-1. cp .env.example .env
-2. configure your .env file
-3. configure your docker/db/.env 
-4. init your db
-5. yarn
-6. npx prisma generate
-7. yarn start
-
-## API:
-
-```yaml
 openapi: 3.0.1
 info:
   title: Nest Application API
@@ -395,4 +382,3 @@ components:
         date:
           type: string
           format: date-time
-```
