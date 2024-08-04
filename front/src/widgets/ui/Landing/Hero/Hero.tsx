@@ -19,9 +19,9 @@ export const Hero = () => {
                     >
                         РАБО
                         <span className="stroke">
-                            ЧИЕ&nbsp;
+                            ТЯГА&nbsp;
                         </span>
-                        РУКИ
+                        +
                     </Text.Heading>
                 </div>
             </Container>
