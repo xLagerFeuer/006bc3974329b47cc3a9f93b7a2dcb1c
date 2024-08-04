@@ -8,6 +8,10 @@ import { JwtAuthGuard } from '@auth/guards/jwt-auth-guard';
 import { UploadModule } from './upload/upload.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { WorkerModule } from './worker/worker.module';
+import { VacancyModule } from './vacancy/vacancy.module';
+import { ShiftModule } from './shift/shift.module';
+import { InterviewModule } from './interview/interview.module';
 
 @Module({
     imports: [
@@ -20,6 +24,10 @@ import { join } from 'path';
         AuthModule,
         ConfigModule.forRoot({ isGlobal: true }),
         UploadModule,
+        WorkerModule,
+        VacancyModule,
+        ShiftModule,
+        InterviewModule,
     ],
     providers: [
         {

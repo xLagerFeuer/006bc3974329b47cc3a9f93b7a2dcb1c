@@ -43,3 +43,54 @@ enum Provider {
   GOOGLE
   YANDEX
 }
+
+model Worker {
+  id         String   @id @default(uuid())
+  img        String
+  firstName  String
+  lastName   String
+  email      String   @unique
+  phone      String
+  telegram   String
+  whatsapp   String
+  position   String
+  about      String
+  experience String
+  date       DateTime
+}
+
+model Vacancy {
+  id          String       @id @default(uuid())
+  companyName String
+  jobTitle    String
+  count       String
+  location    String
+  workTime    String
+  salary      String
+  date        DateTime
+  description String
+  type        VacancyType
+}
+
+enum VacancyType {
+  LOW
+  HIGH
+}
+
+model Shift {
+  id           String   @id @default(uuid())
+  start        DateTime
+  end          DateTime
+  name         String
+  progress     Int
+  type         String
+  hideChildren Boolean
+  displayOrder Int
+}
+
+model Interview {
+  id     String   @id @default(uuid())
+  text   String
+  count  String
+  date   DateTime
+}
